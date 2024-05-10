@@ -6,12 +6,20 @@
 
 let numeros = parseInt(prompt("Digite um número: "));
 
-if (numeros == 1, 3, 5, 7, 9, 11) {
-console.log("Este número é impar")}
+if (numeros%2 ==0){ 
+// com a % ele ta pegando o resto da divisao.
+// como sabemos que um numero é par? que na divisao sempre sobra 0 quando dividimos 2 e todo numero que é impar sobra 1 na 
+// divisao
+
+// truncate é o que desconsidera a parte decimal e pega so a parte inteira
+
+console.log("Este número é par")
+
+}
 
 
 else{
-    console.log("Este número é par")
+    console.log("Este número é impar")
 }
 
 
