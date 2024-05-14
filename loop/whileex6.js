@@ -10,3 +10,6 @@ while (numpar < 20){
 console.log("O número par é " + numpar)
 
 }
+
+
+
