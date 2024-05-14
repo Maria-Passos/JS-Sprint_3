@@ -16,6 +16,7 @@
 
 let salario = 1000;
 
+// while =enquanto 
 while (salario < 5000){
     // salario = salario + 100;
     // ou
