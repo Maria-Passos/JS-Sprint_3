@@ -2,7 +2,9 @@
 
 let numpar = 0;
 
-while (numpar < 20){
+console.log("Números pares de 0 à 20: ")
+
+while (numpar <= 20){
     // salario = salario + 100;
     // ou
     numpar += 2;

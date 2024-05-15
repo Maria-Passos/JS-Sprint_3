@@ -4,11 +4,11 @@
 // maior que 18.
 
 
-let idade = parseInt(prompt("Ola, digite seu idade: "));
+let idade = parseInt(prompt("Olá, digite seu idade: "));
 
 // let idade = 18;
 
-while (idade <= 18){
+while (idade < 18){
 
 idade = parseInt(prompt("Ola, digite seu idade: "));
     console.log( "Sua idade é: "+ idade);
