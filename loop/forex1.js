@@ -4,3 +4,11 @@
 for(let num = 1; num <= 10; num++){
         console.log(num);
      }   
+
+//      ou contagem regressiva:
+
+for (let cont= 10; cont >=1; cont--){
+        console.log(cont);
+     }   
+
+

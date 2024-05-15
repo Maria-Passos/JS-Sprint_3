@@ -4,6 +4,8 @@
 //     console.log(num);
 // }   
 
+// console,log para aparecer na tela do console. 
+
 
 // //contagem regressiva
 
