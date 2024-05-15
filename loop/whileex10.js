@@ -4,8 +4,9 @@
  let num = parseInt(prompt("Ola, digite um numero: "));
 
 
- while(num > 0){
-    num =  parseInt(prompt("Ola, digite um numero: "));
-    console.log( num);
-    }
+ do{
+   num=parseInt(prompt("Ola, digite um numero: "));
+ }while(num !==  0);
+    
+    
 

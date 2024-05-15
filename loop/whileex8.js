@@ -10,7 +10,7 @@ let idade = parseInt(prompt("Olá, digite seu idade: "));
 
 while (idade < 18){
 
-idade = parseInt(prompt("Ola, digite seu idade: "));
+idade = parseInt(prompt("Vai beber toddynho, tu é menos de idade! Digite sua idade novamente: "));
     console.log( "Sua idade é: "+ idade);
 }
 
