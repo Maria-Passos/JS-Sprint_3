@@ -1,3 +1,5 @@
+// HOSTING- chamar antes de declarar a funcao.
+
 function saudacao () {
     let nomePessoa = prompt("Digite seu nome: ")
 
@@ -13,7 +15,7 @@ function saudacao () {
 
 }
 
-saudacao()
+// saudacao()
 
 
 function somar (num1, num2, num3){
@@ -42,12 +44,15 @@ let professor = {
     idade: 25
 }
 
+console.log(professor); // como chamar o objeto e funcao
 
+// let professor = {}
 
-let professor = {}
+// professor.nome = prompt("Digite o nome")
+// professor.sobrenome = prompt("Digite o sobrenome")
+// professor.idade = parseInt(prompt("Digite a idade"))
 
-professor.nome = prompt("Digite o nome")
-professor.sobrenome = prompt()
+// console.log(professor);
 
 // com o . a gente acessa o valor da propriedade no console
 // ex: professor.nome
