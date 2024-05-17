@@ -28,10 +28,6 @@
 
 
 // ------------------------
-
-
-    
-
     function maioridadeIfElse() {
         let anoNascimento = parseFloat(prompt( "Em que ano você nasceu?"));
     
@@ -48,31 +44,192 @@
         else (console.log("Você É menor de idade, volte a tomar TODDYNHO!"));
     }  
    
+    function fibonacci(){
+        let fib1= 1;
+        let fib2= 1;
+        
+        console.log("Os primeiros 10 números da sequencia de Fibonacci são: ");
+        console.log(fib1);
+        console.log(fib2);
+        
+        
+        for(let i = 2; i < 10; i++){
+            let nextFib = fib1 + fib2;
+            console.log(nextFib);
+        
+        
+        fib1 = fib2;
+        fib2 = nextFib;
+        }
+          }
+
+    function soma1a100(){
+        let num= 1;
+        let soma= 0;
+        
+        while( num <= 100){
+           // soma = soma + num; ou
+           soma +=num;
+           console.log(soma);
+            num++
+        }
+        
+        console.log("A soma dos números de 1 à 100 é: " + soma)
+          }
+
+    function contagemregressiva(){
+        let num = parseInt(prompt("Olá, digite um número para a contagem regressiva: "));
+
+        console.log("A contagem regressiva está comecando em: " + num)
+        
+        
+        while(num >=0){
+            console.log(num);
+            num--
+        } }
+
+    function numpar1a20(){
+        let numpar = 0;
+
+        console.log("Números pares de 0 à 20: ")
+        
+        while (numpar <= 20){
+           
+            numpar += 2;
+        
+        console.log("O número par é " + numpar)
+          }}
+
     function num1a10(){
     for(let num = 1; num <= 10; num++){
         console.log(num);
      }  }
 
-     let opcao= window.prompt("MENU\nDigite a opção desejada:\n\n1 - Exemplo login")
 
-     
 
-    if () {
+
+    function descontocompra(){
+        alert = ("Sempre um prazer te atender!");
+
+        let valorTotalRoupas = parseFloat(prompt("Qual o valor total da sua compra?"));
         
-    } switch (opcao) {
-         case "1":
-            maioridadeIfElse()
-            break;
-        case "2":
-            num1a10()
-             break;
+        let desconto;
+        
+        
+        if ( valorTotalRoupas <= 100) {
+            desconto = 0;
+        console.log("Perdeu Playboy, está sem desconto") ;
+        }
+        
+        
+        else if ( valorTotalRoupas > 100,01 && valorTotalRoupas <= 200 ){
+            desconto = 0,1;
+        console.log ("Arrasou! Tu Ganhou " + (desconto*100) + "% de desconto!!")
+        
+        }
+        
+        else if ( valorTotalRoupas >=200 ){
+             desconto = 0.2; //(0.2=20%)//
+        console.log ("Ta podendo, hein ! Tu Ganhou "+ (desconto*100) + "% de desconto!!!") 
+        }
+        
+        let valorFinal = valorTotalRoupas - (valorTotalRoupas * desconto);
+        
+        console.log("O valo final da compra com o desconto: R$:" + valorFinal.toFixed(2))  }
+
+
+
+    function parOuImpar(){
+        let numeros = parseInt(prompt("Digite um número: "));
+
+        if (numeros%2 ==0){ 
+        
+        console.log("Este número é par")
+        
+        }
+    
+        
+        else{
+            console.log("Este número é impar")
+        }  }
+
+
+    function numCrescente(){
+        let numero1 = parseFloat(prompt( "Digite o primeiro número:"));
+
+        let numero2 = parseFloat(prompt( "Digite o segundo número:"));
+        
+        let numero3 = parseFloat(prompt( "Digite o terceiro número:"));
+        
+        
+        if   (numero1 < numero2 && numero2 < numero3 ) {
+        console.log("Estes números estão em ordem crescente!! " ) }
+    
+        
+        else {
+            console.log("Estes números NÃO estão em ordem crescente!! " )  }}
+    
+    // ---------------------------
+
+     let opcao= window.prompt("MENU\nDigite uma opção:\n\n1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:")
+
      
-         default:
-             break;}
 
-          
+     while (opcao != "sair"){
+        //  opcao= window.prompt("MENU\nDigite uma opção:\n\n1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:")
+        
+        switch (opcao) {
+            case "1":
+               maioridadeIfElse()
+               break;
 
+            case "2":
+                fibonacci()
+                 break;
+              
+           case "3":
+            soma1a100()
+                break;
+        
+           case "4":
+               contagemregressiva()
+                break;
+        
+           case "5":
+               num1a10()
+                break;
+        
+           case "6":
+            numpar1a20()
+                break;
+        
+           case "7":
+               num1a10()
+                break;
+        
+           case "8":
+               descontocompra()
+                break;
+        
+           case "9":
+            parOuImpar()
+                break;
+        
+           case "10":
+            numCrescente()
+                break;
+        
+            default:
+                break;
 
+        
+            }     opcao= window.prompt("MENU\nDigite uma opção:\n\n1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:")
+            console.clear() //limpa o console e tem que ser depois da pergunta.
+        } 
+       
+
+        
+   
 
 
 
