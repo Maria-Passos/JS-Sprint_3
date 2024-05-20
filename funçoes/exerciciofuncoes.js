@@ -28,6 +28,10 @@
 
 
 // ------------------------
+
+
+
+
     function maioridadeIfElse() {
         let anoNascimento = parseFloat(prompt( "Em que ano você nasceu?"));
     
@@ -105,9 +109,6 @@
         console.log(num);
      }  }
 
-
-
-
     function descontocompra(){
         alert = ("Sempre um prazer te atender!");
 
@@ -115,6 +116,7 @@
         
         let desconto;
         
+        // console.log ( "tu gastou "+ valorTotalRoupas + "!");
         
         if ( valorTotalRoupas <= 100) {
             desconto = 0;
@@ -137,8 +139,6 @@
         
         console.log("O valo final da compra com o desconto: R$:" + valorFinal.toFixed(2))  }
 
-
-
     function parOuImpar(){
         let numeros = parseInt(prompt("Digite um número: "));
 
@@ -152,8 +152,6 @@
         else{
             console.log("Este número é impar")
         }  }
-
-
     function numCrescente(){
         let numero1 = parseFloat(prompt( "Digite o primeiro número:"));
 
@@ -162,33 +160,28 @@
         let numero3 = parseFloat(prompt( "Digite o terceiro número:"));
         
         
+        // verifica se eles estão em ordem crescente.
+        
         if   (numero1 < numero2 && numero2 < numero3 ) {
         console.log("Estes números estão em ordem crescente!! " ) }
-    
+        
+      
         
         else {
             console.log("Estes números NÃO estão em ordem crescente!! " )  }}
     
     // ---------------------------
 
-     let opcao= window.prompt("MENU\nDigite uma opção:\n\n1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:")
-
-     
+     let opcao= window.prompt("MENU\nDigite a opção desejada:\n\n1 - Exemplo login")
 
      while (opcao != "sair"){
-        //  opcao= window.prompt("MENU\nDigite uma opção:\n\n1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:")
+        
         
         switch (opcao) {
             case "1":
                maioridadeIfElse()
                break;
-
-            case "2":
-                fibonacci()
-                 break;
-              
-           case "3":
-            soma1a100()
+ 
                 break;
         
            case "4":
@@ -223,9 +216,8 @@
                 break;
 
         
-            }     opcao= window.prompt("MENU\nDigite uma opção:\n\n1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:")
-            console.clear() //limpa o console e tem que ser depois da pergunta.
-        } 
+            }     opcao= window.prompt("MENU\nDigite a opção desejada:\n\n1 - Exemplo login")
+        }
        
 
         
