@@ -182,7 +182,6 @@
                maioridadeIfElse()
                break;
  
-                break;
         
            case "4":
                contagemregressiva()
